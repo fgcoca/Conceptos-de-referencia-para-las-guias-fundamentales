@@ -45,7 +45,15 @@ extra:
 
 # 4. Navegación
 nav:
-  - Introducción: index.md # TODO:
+  - Introducción: index.md
+  - Problemas de conexión USB: problemasUSB.md
+  - Conocimientos técnicos previos: previos.md
+  - Conceptos sobre CO2 y VOC: CO2.md
+  - Modelo de colores: mod_colores.md
+  - Comunicaciones Bluetooth: bt.md
+  - Conceptos básicos de UDP: basicoUDP.md
+
+
 #- Ayuda:
     #- Chuleta: ayuda/ayuda.md
     #- Chuleta de Markdown: ayuda/markdown.md
@@ -61,6 +69,7 @@ nav:
 #  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
 #  - auto
 
+# 6. Configuración del tema
 theme:
   name: material
   # Color - Fuentes - Lenguaje
