@@ -73,13 +73,10 @@ En la figura 3 del artículo Editorial de BMJ dado en la webgrafía podemos leer
 
 Reproducimos aquí la gráfica en formato original traducida para que nos sirva de guía.
 
-<center>
-
-![Gráfica de riesgos de transmisión](../img/previo/riesgos.svg)  
-*Gráfica de riesgos de transmisión*  
-***Clic para ver ampliada***
-
-</center>
+<p style="text-align: center;">
+<img src="../img/previo/riesgos.png" alt="Gráfica de riesgos de transmisión"/>
+<br><b><em>Clic para ampliar</em></b></br>
+</p>
 
 ### <FONT COLOR=#AA0000>Unidades de medida del CO2</font>
 Las formas más habituales de indicar la concentración de un contaminante atmosférico son las ppb (partes por billón) y las ppm (partes por millón), los µg/m³ (microgramos por metro cúbico) y los mg/m³ (miligramos por metro cúbico).
@@ -173,7 +170,7 @@ En la tabla siguiente damos los valores que vamos a considerar en nuestro caso.
 <center>
 
 | VOC (ppb) | Ambiente | Mensaje | Color |
-|:-:|:-:|---|---|
+|---|---|---|---|
 | de 0 a 200 | Muy bueno | Aconsejado | Apagado |
 | de 201 a 600 | Bueno | Bueno | Verde |
 | de 601 a 1000 | Moderado | ventilar | Amarillo |

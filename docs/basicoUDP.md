@@ -32,7 +32,7 @@ Veamos una descripción de los bloques que componen esta libreria:
 
 <center>
 
-![Bloque inicia UDP en el puerto...](../img/CoCube/B_ini_UDP.png)  
+![Bloque inicia UDP en el puerto...](../img/udp/B_ini_UDP.png)  
 
 </center>
 
@@ -47,7 +47,7 @@ nuestro script lo verá y lo recibirá.
 
 <center>
 
-![Bloque envia paquete UDP...a la IP...y puerto...](../img/CoCube/B_envia_paq_UDP.png)  
+![Bloque envia paquete UDP...a la IP...y puerto...](../img/udp/B_envia_paq_UDP.png)  
 
 </center>
 
@@ -68,7 +68,7 @@ Los mensajes también pueden ser enviados utilizando la dirección IP específic
 
 <center>
 
-![Bloque recibe paquete UDP](../img/CoCube/B_recib_paq_UDP.png)  
+![Bloque recibe paquete UDP](../img/udp/B_recib_paq_UDP.png)  
 
 </center>
 
@@ -82,7 +82,7 @@ Hay otros bloques en la biblioteca que no se utilizan en este proyecto aunque se
 
 <center>
 
-![Bloque detén UDP](../img/CoCube/B_deten_UDP.png)  
+![Bloque detén UDP](../img/udp/B_deten_UDP.png)  
 
 </center>
 
@@ -90,7 +90,7 @@ Hay otros bloques en la biblioteca que no se utilizan en este proyecto aunque se
 
 <center>
 
-![Bloque dirección IP remota de UDP](../img/CoCube/B_dir_rem_UDP.png)  
+![Bloque dirección IP remota de UDP](../img/udp/B_dir_rem_UDP.png)  
 
 </center>
 
@@ -98,6 +98,6 @@ Hay otros bloques en la biblioteca que no se utilizan en este proyecto aunque se
 
 <center>
 
-![Bloque puerto remoto de UDP](../img/CoCube/B_puerto_rem_UDP.png)  
+![Bloque puerto remoto de UDP](../img/udp/B_puerto_rem_UDP.png)  
 
 </center>
