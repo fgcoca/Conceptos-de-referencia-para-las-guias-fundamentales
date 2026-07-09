@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -994,46 +996,82 @@
 <p>De esta forma, 1 ppm es unidad de volumen de contaminante en un millón de unidades de volumen de aire. Para concentraciones altas de CO2 se usa el porcentaje volumétrico (unidades de volumen de CO2 en 100 unidades de volumen de aire), es decir que 10.000 ppm = 1%.</p>
 <p>Es importante tener en cuenta que el billón de estas ppb es un billón anglosajón, esto es, 1000 millones de volúmenes (<span class="arithmatex">\(10^9\)</span>). En Europa un billón es 1 millón de millones, <span class="arithmatex">\(10^{12}\)</span>, por lo que la equivalencia es: <strong>1ppm = 1000ppb</strong></p>
 <p>Otras dos formas habituales de expresar la concentración de los contaminantes atmosféricos son los µg/m³ (microgramos por metro cúbico) y los mg/m³ (miligramos por metro cúbico). La equivalencia es similar a las de ppm y ppb:</p>
-<center>1 mg/m³ = 1000 µg/m³</center>
+<p class="textoC">1 mg/m³ = 1000 µg/m³</p>
 
 <p>Para convertir las ppb en µg/m³ tenemos que tener en cuenta que dicha conversión depende del tipo de contaminante, y de una presión y una temperatura que tomemos como referencia. Para ver esto, tomemos una concentración de 1 ppb de un contaminante M. Esto implica que tenemos 1 m³ de M en <span class="arithmatex">\(10^9\)</span> m³ de aire. O lo que es lo mismo, <span class="arithmatex">\(10^{−9}\)</span> m³ de M en 1 m³ de aire.</p>
 <p>La forma habitual de expresar la concentración de CO2 es en mg/m³ (miligramos por metro cúbico). Para convertir las ppm en mg/m³ tenemos que tener en cuenta que dicha conversión depende del tipo de gas, y de una presión y una temperatura que tomemos como referencia.</p>
 <p>Teniendo en cuenta la ecuación general de los gases ideales, para el CO2 (con peso molecular 44,01 g/mol), y tomando como referencia P = 1 atm y T = 298,16 K (25 ºC), tenemos (R = 0,08205746 atm·L/mol·K):</p>
-<center>
+<p class="textoC">
 
-$\dfrac{10^{6}\cdot 44,01\hspace{0.1cm} g/mol\cdot 1\hspace{0.1cm}atm\cdot 10^{-6}}{0,08205746\cdot 298,16\hspace{0.1cm}K}=1,798\hspace{0.1cm}mg\hspace{0.1cm}\approx\hspace{0.1cm}1,8\hspace{0.1cm}mg$
+$$\dfrac{10^{6}\cdot 44,01\hspace{0.1cm} g/mol\cdot 1\hspace{0.1cm}atm\cdot 10^{-6}}{0,08205746\cdot 298,16\hspace{0.1cm}K}=1,798\hspace{0.1cm}mg\hspace{0.1cm}\approx\hspace{0.1cm}1,8\hspace{0.1cm}mg$$
 
-</center>
+</p>
 
 <p>Luego:</p>
-<center>
+<p class="textoC">
 
-$\boxed{1\hspace{0.1cm}ppm=1,8\hspace{0.1cm}mg/m^{3}\hspace{1cm}(CO_{2}\hspace{0.2cm}@\hspace{0.2cm}1\hspace{0.2cm}atm.\hspace{0.2cm} 25\hspace{0.2cm}ºC)}$
+$$\boxed{1\hspace{0.1cm}ppm=1,8\hspace{0.1cm}mg/m^{3}\hspace{1cm}(CO_{2}\hspace{0.2cm}@\hspace{0.2cm}1\hspace{0.2cm}atm.\hspace{0.2cm} 25\hspace{0.2cm}ºC)}$$
 
-</center>
+</p>
 
 <p>Que será la relación a usar para convertir entre unidades de CO2.</p>
 <p>También se puede expresar como:</p>
-<center>
+<p class="textoC">
 
-$\boxed{1\hspace{0.1cm}ppb=1800\hspace{0.1cm}\mu g/m^{3}\hspace{1cm}(CO_{2}\hspace{0.2cm}@\hspace{0.2cm}1\hspace{0.2cm}atm.\hspace{0.2cm} 25\hspace{0.2cm}ºC)}$
+$$\boxed{1\hspace{0.1cm}ppb=1800\hspace{0.1cm}\mu g/m^{3}\hspace{1cm}(CO_{2}\hspace{0.2cm}@\hspace{0.2cm}1\hspace{0.2cm}atm.\hspace{0.2cm} 25\hspace{0.2cm}ºC)}$$
 
-</center>
+</p>
 
 <h3 id="valores-de-referencia-para-el-co2"><font color="#AA0000">Valores de referencia para el CO2</font><a class="headerlink" href="#valores-de-referencia-para-el-co2" title="Permanent link">¶</a></h3>
 <p>En la tabla siguientes damos los valores que vamos a considerar en nuestro caso. En la columna color se establece cual será el color que se ilumine en un posible semáforo.</p>
-<center>
-
-| CO2 (ppm) | CO2 ($mg / m ^{3}$) | Ambiente | Mensaje | Color |
-|:-:|:-:|---|---|---|
-| de 0 a 500 | de 0 a 900 | Muy bueno | Aconsejado | Apagado |
-| de 501 a 1000 | de 901 a 1800 | Bueno | Bueno | Verde |
-| de 1001 a 1500 | de 1801 a 2700 | Moderado | ventilar | Amarillo |
-| de 1501 a 2000 | de 2701 a 3600 | Muy malo | VENTILAR | Rojo fijo |
-| mas de 2000 | mas de 3600 | Inaceptable | Desalojar | Rojo intermitente |
-
-</center>
-
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">CO2 (ppm)</th>
+<th style="text-align: center;">CO2 (<span class="arithmatex">\(mg / m ^{3}\)</span>)</th>
+<th>Ambiente</th>
+<th>Mensaje</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">de 0 a 500</td>
+<td style="text-align: center;">de 0 a 900</td>
+<td>Muy bueno</td>
+<td>Aconsejado</td>
+<td>Apagado</td>
+</tr>
+<tr>
+<td style="text-align: center;">de 501 a 1000</td>
+<td style="text-align: center;">de 901 a 1800</td>
+<td>Bueno</td>
+<td>Bueno</td>
+<td>Verde</td>
+</tr>
+<tr>
+<td style="text-align: center;">de 1001 a 1500</td>
+<td style="text-align: center;">de 1801 a 2700</td>
+<td>Moderado</td>
+<td>ventilar</td>
+<td>Amarillo</td>
+</tr>
+<tr>
+<td style="text-align: center;">de 1501 a 2000</td>
+<td style="text-align: center;">de 2701 a 3600</td>
+<td>Muy malo</td>
+<td>VENTILAR</td>
+<td>Rojo fijo</td>
+</tr>
+<tr>
+<td style="text-align: center;">mas de 2000</td>
+<td style="text-align: center;">mas de 3600</td>
+<td>Inaceptable</td>
+<td>Desalojar</td>
+<td>Rojo intermitente</td>
+</tr>
+</tbody>
+</table>
 <h3 id="fuentes-emisoras-de-co2-en-personas"><font color="#AA0000">Fuentes emisoras de CO2 en personas</font><a class="headerlink" href="#fuentes-emisoras-de-co2-en-personas" title="Permanent link">¶</a></h3>
 <p>En el ambiente que nos ocupa la principal fuente de emisión de CO2 va a ser el ser humano a través de la respiración, la sudoración, la transpiración y el sudor.</p>
 <h2 id="sobre-los-voc"><font color="#007575"><strong>Sobre los VOC</strong></font><a class="headerlink" href="#sobre-los-voc" title="Permanent link">¶</a></h2>
@@ -1071,18 +1109,48 @@ $\boxed{1\hspace{0.1cm}ppb=1800\hspace{0.1cm}\mu g/m^{3}\hspace{1cm}(CO_{2}\hspa
 <p>A largo plazo pueden dañar el hígado, los riñones o el sistema nervioso central. También pueden ser carcinógenos, como por ejemplo el benceno.</p>
 <h3 id="valores-de-referencia-para-voc"><font color="#AA0000">Valores de referencia para VOC</font><a class="headerlink" href="#valores-de-referencia-para-voc" title="Permanent link">¶</a></h3>
 <p>En la tabla siguiente damos los valores que vamos a considerar en nuestro caso.</p>
-<center>
-
-| VOC (ppb) | Ambiente | Mensaje | Color |
-|---|---|---|---|
-| de 0 a 200 | Muy bueno | Aconsejado | Apagado |
-| de 201 a 600 | Bueno | Bueno | Verde |
-| de 601 a 1000 | Moderado | ventilar | Amarillo |
-| de 1001 a 2000 | Muy malo | VENTILAR | Rojo fijo |
-| mas de 2000 |  Inaceptable | Desalojar | Rojo intermitente |
-
-</center>
-
+<table>
+<thead>
+<tr>
+<th>VOC (ppb)</th>
+<th>Ambiente</th>
+<th>Mensaje</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>de 0 a 200</td>
+<td>Muy bueno</td>
+<td>Aconsejado</td>
+<td>Apagado</td>
+</tr>
+<tr>
+<td>de 201 a 600</td>
+<td>Bueno</td>
+<td>Bueno</td>
+<td>Verde</td>
+</tr>
+<tr>
+<td>de 601 a 1000</td>
+<td>Moderado</td>
+<td>ventilar</td>
+<td>Amarillo</td>
+</tr>
+<tr>
+<td>de 1001 a 2000</td>
+<td>Muy malo</td>
+<td>VENTILAR</td>
+<td>Rojo fijo</td>
+</tr>
+<tr>
+<td>mas de 2000</td>
+<td>Inaceptable</td>
+<td>Desalojar</td>
+<td>Rojo intermitente</td>
+</tr>
+</tbody>
+</table>
 <h3 id="fuentes-emisoras-de-voc-en-personas"><font color="#AA0000">Fuentes emisoras de VOC en personas</font><a class="headerlink" href="#fuentes-emisoras-de-voc-en-personas" title="Permanent link">¶</a></h3>
 <p>En el ser humano se producen diferentes gases VOC a través de la respiración (acetona, etanol, isopreno), la sudoración, la transpiración, el sudor, por flato (metano), los cosméticos (Limoneno, eucaliptol), el mobiliaario (alcoholes), la combustión de motores y calderas (hidrocarburos) y los ordenadores, impresoras o fotocopiadoras (benceno, estireno, fenol).</p>
 <h2 id="el-sensor-ccs811"><font color="#007575"><strong>El sensor CCS811</strong></font><a class="headerlink" href="#el-sensor-ccs811" title="Permanent link">¶</a></h2>

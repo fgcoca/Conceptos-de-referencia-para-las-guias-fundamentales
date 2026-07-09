@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -743,12 +745,7 @@
 <ul>
 <li><strong>inicia UDP en el puerto...</strong></li>
 </ul>
-<center>
-
-![Bloque inicia UDP en el puerto...](../img/udp/B_ini_UDP.png)  
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/udp/B_ini_UDP.png" data-desc-position="bottom"><img alt="Bloque inicia UDP en el puerto..." src="../img/udp/B_ini_UDP.png"></a>  </p>
 <p>Este bloque configura el script para que <strong>escuche los mensajes UDP en el puerto designado</strong>. La dirección IP propia del dispositivo y el número de puerto especificado forman un socket e identifican de forma única el dispositivo y cualquier servicio de software que proporcione. Según lo anterior:</p>
 <ul>
 <li>si se envía un mensaje de difusión UDP dirigido al puerto 5000,</li>
@@ -758,12 +755,7 @@
 <ul>
 <li><strong>envia paquete UDP...a la IP...y puerto...</strong></li>
 </ul>
-<center>
-
-![Bloque envia paquete UDP...a la IP...y puerto...](../img/udp/B_envia_paq_UDP.png)  
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/udp/B_envia_paq_UDP.png" data-desc-position="bottom"><img alt="Bloque envia paquete UDP...a la IP...y puerto..." src="../img/udp/B_envia_paq_UDP.png"></a>  </p>
 <p>Este bloque se utiliza para <strong>enviar mensajes UDP a la dirección IP y puerto designados</strong>. La <strong>dirección IP 255.255.255.255</strong> es una dirección de <strong>difusión especial</strong>, y se utilizará para acceder a todos los dispositivos IP en la subred local. Esto facilita el envío de mensajes sin molestarse con la dirección IP específica de cada dispositivo.</p>
 <p>Ten en cuenta que <strong>en MicroBlocks, los mensajes de difusión no son vistos por el dispositivo emisor</strong>. Sin embargo, <strong>en la MIT AI2 APP, las difusiones son vistas por el teléfono emisor</strong>.</p>
 <p>Los mensajes también pueden ser enviados utilizando la dirección IP específica y el número de puerto UDP del dispositivo de destino, incluso a la propia dirección IP.</p>
@@ -776,41 +768,22 @@
 <ul>
 <li><strong>recibe paquete UDP</strong></li>
 </ul>
-<center>
-
-![Bloque recibe paquete UDP](../img/udp/B_recib_paq_UDP.png)  
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/udp/B_recib_paq_UDP.png" data-desc-position="bottom"><img alt="Bloque recibe paquete UDP" src="../img/udp/B_recib_paq_UDP.png"></a>  </p>
 <p><strong>Siempre que se reciba un mensaje UDP, este bloque contendrá su contenido</strong>. Comprobando si su longitud es mayor que cero, podemos consultar el resultado de las transacciones UDP.</p>
 <p>Este bloque también proporciona una opción booleana de <strong>datos binarios</strong> que permite recibir cualquier tipo de dato.</p>
 <p>Hay otros bloques en la biblioteca que no se utilizan en este proyecto aunque se explican por sí mismos.</p>
 <ul>
 <li><strong>detén UDP</strong>. Detiene el procesado de UDP</li>
 </ul>
-<center>
-
-![Bloque detén UDP](../img/udp/B_deten_UDP.png)  
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/udp/B_deten_UDP.png" data-desc-position="bottom"><img alt="Bloque detén UDP" src="../img/udp/B_deten_UDP.png"></a>  </p>
 <ul>
 <li><strong>dirección IP remota de UDP</strong>. El mensaje UDP envía la dirección IP remota.</li>
 </ul>
-<center>
-
-![Bloque dirección IP remota de UDP](../img/udp/B_dir_rem_UDP.png)  
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/udp/B_dir_rem_UDP.png" data-desc-position="bottom"><img alt="Bloque dirección IP remota de UDP" src="../img/udp/B_dir_rem_UDP.png"></a>  </p>
 <ul>
 <li><strong>puerto remoto de UDP</strong>. El mensaje UDP envía el puerto remoto.</li>
 </ul>
-<center>
-
-![Bloque puerto remoto de UDP](../img/udp/B_puerto_rem_UDP.png)  
-
-</center>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/udp/B_puerto_rem_UDP.png" data-desc-position="bottom"><img alt="Bloque puerto remoto de UDP" src="../img/udp/B_puerto_rem_UDP.png"></a>  </p>
 
 
 

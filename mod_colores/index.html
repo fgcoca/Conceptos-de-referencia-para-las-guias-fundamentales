@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -865,80 +867,50 @@
 <p>En el enlace anterior tenemos mayor información de los modelos existentes, de los que nosotros vamos a ver los dos que habitualmente se utilizan en programación de placas microcontroladas, el RGB y el HSV.</p>
 <h2 id="modelo-rgb"><font color="#007575"><strong>Modelo RGB</strong></font><a class="headerlink" href="#modelo-rgb" title="Permanent link">¶</a></h2>
 <p>El modelo de color RGB utiliza los componentes RGB (Red, Green, Blue) o RVA (Rojo, Verde, Azul) para definir la cantidad de luz de cada color en un color determinado. En una imagen cada componente se expresa como un número entre 0 y 255, lo que significa que hay 256 grados de cada color primario. Si multiplicamos todos los grados de color disponibles por canal se obtiene <span class="arithmatex">\(256x256x256 = 16777216\)</span>, es decir mas de 16,7 millones de combinaciones de color.</p>
-<p>El ojo humano sitúa su espectro visible entre la lu6z violeta y la luz roja estimándose que puede distinguir hasta 10 millones de colores. El funcionamiento del ojo de manera resumida es: la córnea inclina la luz hacia la pupila, esta es la que regula la cantidad de luz que llega al cristalino. El cristalino se encarga de enfocar la luz en la retina, la capa de células nerviosas situada en el fondo del ojo. En la retina hay dos tipos de células, los conos (se estimulan en condiciones de buena luminosidad) y los bastones (se estimulan en condiciones de baja luminosidad). Los conos humanos tienen habitualmente tres tipos de pigmentos: rojo, verde y azul. </p>
+<p>El ojo humano sitúa su espectro visible entre la lu6z violeta y la luz roja estimándose que puede distinguir hasta 10 millones de colores. El funcionamiento del ojo de manera resumida es: la córnea inclina la luz hacia la pupila, esta es la que regula la cantidad de luz que llega al cristalino. El cristalino se encarga de enfocar la luz en la retina, la capa de células nerviosas situada en el fondo del ojo. En la retina hay dos tipos de células, los conos (se estimulan en condiciones de buena luminosidad) y los bastones (se estimulan en condiciones de baja luminosidad). Los conos humanos tienen habitualmente tres tipos de pigmentos: rojo, verde y azul.</p>
 <p>Es un modelos de color aditivo, luego el color se produce a partir de la luz transmitida. RGB se utiliza por lo tanto en monitores, donde las luces roja, azul y verde se mezclan de distintas formas para reproducir un amplio rango de colores. Cuando las luces roja, azul y verde se combinan en su máxima intensidad, el ojo percibe el color resultante como blanco. En teoría, los colores mezclados siguen siendo rojo, azul y verde, pero los pixeles del monitor se encuentran demasiado juntos para que nuestro ojo pueda diferenciar los tres colores. Cuando el valor de cada componente es 0, indica que hay una ausencia de luz y el ojo percibe el color negro.</p>
-<center>
-
-![Modelo de color RGB](../img/mod_colores/RGB.jpg)
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/RGB.jpg" data-desc-position="bottom"><img alt="Modelo de color RGB" src="../img/mod_colores/RGB.jpg"></a></p>
 <h2 id="modelo-hsl"><font color="#007575"><strong>Modelo HSL</strong></font><a class="headerlink" href="#modelo-hsl" title="Permanent link">¶</a></h2>
 <p>El modelo <strong>HSL</strong> o a veces <strong>HSI</strong> (siglas del inglés Hue, Saturation, Lightness o Intensity; traducido por, ‘matiz o tono, saturación, luminosidad o intensidad’), define un modelo de color en términos de sus componentes constituyentes.</p>
 <p>En el modelo de color <strong>HSV</strong>, un color se define por su matiz o tono (H), su saturación (S) y su luminosidad o intensidad (L). Ahora las siglas no significan colores como en RGB, sino parámetros.</p>
 <p>La variedad de colores se obtiene cambiando los tres canales de color de tono (H), saturación (S) y luminosidad (L) y superponiéndolos entre sí. Este modo de color cubre los colores que puede percibir la visión humana.</p>
 <p>Se suele representar mediante la rueda de color, como vemos a continuación:</p>
-<center>
-
-![Rueda de color HSL](../img/mod_colores/rueda_HSL.png)
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/rueda_HSL.png" data-desc-position="bottom"><img alt="Rueda de color HSL" src="../img/mod_colores/rueda_HSL.png"></a></p>
 <h3 id="tono-matiz-o-hue-h"><font color="#AA0000">Tono, matiz o Hue (H)</font><a class="headerlink" href="#tono-matiz-o-hue-h" title="Permanent link">¶</a></h3>
 <p>En el círculo cromático el grado 0 (o 360º si hemos dado una vuelta completa) del Hue es el color rojo. El circulito rodeado corresponde al ángulo en la rueda de color. Cada ángulo representa un color. En esa posición la saturación S por defecto toma su valor máximo de 100, y el brillo (L) es de 50. Nos podemos mover con estas condiciones por la rueda y obtener los distintos colores para esos valores de saturación o brillo.</p>
-<center>
-
-![Cambios de tono (H) en la rueda de color HSL](../img/mod_colores/cambios_H_rueda_HSL.gif)
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/cambios_H_rueda_HSL.gif" data-desc-position="bottom"><img alt="Cambios de tono (H) en la rueda de color HSL" src="../img/mod_colores/cambios_H_rueda_HSL.gif"></a></p>
 <h3 id="saturacion-o-saturation-s"><font color="#AA0000">Saturación o Saturation (S)</font><a class="headerlink" href="#saturacion-o-saturation-s" title="Permanent link">¶</a></h3>
 <p>Indica la intensidad de un tono concreto. Los valores varian entre 0 y 100, siendo 100 el máximo de saturación posible y 0 el mínimo, que dará como resultado, gris. El parámetro cambia sus valores moviendose dentro del triángulo en la línea del díametro del círculo que corresponde a la posición del ángulo determinado por H.</p>
-<center>
-
-![Cambios de saturación (S) en la rueda de color HSL](../img/mod_colores/cambios_S_rueda_HSL.gif)
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/cambios_S_rueda_HSL.gif" data-desc-position="bottom"><img alt="Cambios de saturación (S) en la rueda de color HSL" src="../img/mod_colores/cambios_S_rueda_HSL.gif"></a></p>
 <p>Observamos que al acercarnos al gris el valor de H se restablece a su valor por defecto. Hasta ese punto el tono se mantiene en el valor definido.</p>
 <h3 id="luminosidad-o-lightness-l"><font color="#AA0000">Luminosidad o Lightness (L)</font><a class="headerlink" href="#luminosidad-o-lightness-l" title="Permanent link">¶</a></h3>
 <p>El parámetro se refiere a como de claro u oscuro es un color. Si queremos aclarar un color nos moveremos hacia el blanco y si quiero oscurecerlo hacia el negro.</p>
-<center>
-
-![Cambios de luminosidad (L) en la rueda de color HSL](../img/mod_colores/cambios_L_rueda_HSL.gif)
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/cambios_L_rueda_HSL.gif" data-desc-position="bottom"><img alt="Cambios de luminosidad (L) en la rueda de color HSL" src="../img/mod_colores/cambios_L_rueda_HSL.gif"></a></p>
 <p>Hay un parámetro que suele acompañar a la rueda de color que es el Alfa (A), que puede variar entre 0 y 100 y se refiere al grado de opacidad del color, correspondiendo 100 a totalmente opaco y 0 a totalmente transparente.</p>
 <h3 id="convertir-rgb-a-hsl"><font color="#AA0000"><strong>Convertir RGB a HSL</strong></font><a class="headerlink" href="#convertir-rgb-a-hsl" title="Permanent link">¶</a></h3>
 <p>Nos vamos a basar en un ejemplo descrito por los valores R=90, G=220, B=80 correspondiente a un tono verde oscuro.</p>
-<center>
-
-![Color con R=90, G=220, B=80](../img/mod_colores/verde_oscuro.png)
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/verde_oscuro.png" data-desc-position="bottom"><img alt="Color con R=90, G=220, B=80" src="../img/mod_colores/verde_oscuro.png"></a></p>
 <ul>
 <li><strong>Paso 1. Máximo y Mínimo</strong>. Convertimos los valores RGB a valores en el rango 0-1 dividiendo por 255 cada valor.</li>
 </ul>
-<center>
+<p class="textoC">
 
-$R = \dfrac{90}{255}= 0.353 \space; \space G = \dfrac{220}{255}= 0.863 \space; \space B = \dfrac{80}{255}= 0.314$
+$$R = \dfrac{90}{255}= 0.353 \space; \space G = \dfrac{220}{255}= 0.863 \space; \space B = \dfrac{80}{255}= 0.314$$
 
-$\boxed{R = 0.353 \space; \space G = 0.863 \space(Max) \space; \space B = 0.314 \space(Min)}$
+$$\boxed{R = 0.353 \space; \space G = 0.863 \space(Max) \space; \space B = 0.314 \space(Min)}$$
 
-</center>
+</p>
 
 <ul>
 <li><strong>Paso 2. Luminancia</strong>. Calculamos la Luminancia sumando los valores máximo y mínimo obtenidos en el paso 1 y lo dividimos por 2.</li>
 </ul>
-<center>
+<p class="textoC">
 
-$L \space = \space \dfrac{0.863 + 0.314}{2} \space= \space 0.5885 \space\approx59 \%$
+$$L \space = \space \dfrac{0.863 + 0.314}{2} \space= \space 0.5885 \space\approx59 \%$$
 
-$\boxed{L \space = \space 0.5885 \space \approx 59 \%}$
+$$\boxed{L \space = \space 0.5885 \space \approx 59 \%}$$
 
-</center>
+</p>
 
 <ul>
 <li><strong>Paso 3. Saturación</strong>. A la hora de calcular la saturación S tendremos en cuenta que:</li>
@@ -951,58 +923,57 @@ $\boxed{L \space = \space 0.5885 \space \approx 59 \%}$
 </ul>
 </blockquote>
 <p>Si no se da alguna de las condiciones anteriores sabemos que hay Saturación, que se calcula según sea el nivel de Luminancia:</p>
-<p><span class="arithmatex">\(\Rightarrow\)</span> <strong>Si <span class="arithmatex">\(L \leq 0.5\)</span></strong></p>
-<center>
-$S = \dfrac{Max-Min}{Max+Min}$
-</center>
-
-<p><span class="arithmatex">\(\Rightarrow\)</span> <strong>Si <span class="arithmatex">\(L &gt; 0.5\)</span></strong></p>
-<center>
-$S = \dfrac{Max-Min}{2.0-Max-Min}$
-
-$S = \dfrac{0.863-0.314}{2-0.863-0.314} = \dfrac{0.549}{0.823}=0.667 \approx 67 \%$
-
-$\boxed{S = 0.667 \approx 67 \%}$
-
-</center>
-
+<p><span class="arithmatex">\(\Rightarrow\)</span> Si <span class="arithmatex">\(L \leq 0.5\)</span></p>
+<div class="arithmatex">\[S = \dfrac{Max-Min}{Max+Min}\]</div>
+<p><span class="arithmatex">\(\Rightarrow\)</span>  <span class="arithmatex">\(Si \quad L &gt; 0.5\)</span></p>
+<div class="arithmatex">\[S = \dfrac{Max-Min}{2.0-Max-Min}\]</div>
+<div class="arithmatex">\[S = \dfrac{0.863-0.314}{2-0.863-0.314} = \dfrac{0.549}{0.823}=0.667 \approx 67 \%\]</div>
+<div class="arithmatex">\[\boxed{S = 0.667 \approx 67 \%}\]</div>
 <ul>
 <li><strong>Paso 4. Tono</strong>. La fórmula del Tono depende de qué canal de color RGB es el valor máximo. Las tres fórmulas diferentes son:</li>
 </ul>
 <p><span class="arithmatex">\(\Rightarrow\)</span>  Si <strong>Rojo</strong> es el máximo, entonces:</p>
-<center>
-$H = \dfrac{G-B}{Max-Min}$
-</center>
+<p class="textoC">
+
+$$H = \dfrac{G-B}{Max-Min}$$
+
+</p>
 
 <p><span class="arithmatex">\(\Rightarrow\)</span>  Si <strong>Verde</strong> es el máximo, entonces:</p>
-<center>
-$H = 2.0 + \dfrac{B-R}{Max-Min}$
+<p class="textoC">
 
-$H = 2.0 + \dfrac{0.314-0.353}{0.863-0.314} = 2.0 + \dfrac{(-0.039)}{0.549} = 1.929$
+$$H = 2.0 + \dfrac{B-R}{Max-Min}$$
 
-$\boxed{H=1.929}$
-</center>
+$$H = 2.0 + \dfrac{0.314-0.353}{0.863-0.314} = 2.0 + \dfrac{(-0.039)}{0.549} = 1.929$$
+
+$$\boxed{H=1.929}$$
+
+</p>
 
 <p><span class="arithmatex">\(\Rightarrow\)</span>  Si <strong>Azul</strong> es el máximo, entonces:</p>
-<center>
-$H = 4.0 + \dfrac{R-G}{Max-Min}$
-</center>
+<p class="textoC">
+
+$$H = 4.0 + \dfrac{R-G}{Max-Min}$$
+
+</p>
 
 <p>El valor obtenido de H lo multiplicamos por 60 para convertirlo en grados en el círculo cromático. Si resulta un valor negativo de H le sumamos 360.</p>
-<center>
+<p class="textoC">
 
-$H = 1.929 \times 60 = 115.74 \approx 116 \space grados$
+$$H = 1.929 \times 60 = 115.74 \approx 116 \space grados$$
 
-$\boxed{H=116 \space grados}$
+$$\boxed{H=116 \space grados}$$
 
-</center>
+</p>
 
 <p>Resultado final:</p>
-<center>
+<p class="textoC">
+
 R = 90, G = 220, B = 80
 
 H = 116, S = 67, L = 59
-</center>
+
+</p>
 
 <h3 id="convertir-hsl-a-rgb"><font color="#AA0000">Convertir HSL a RGB</font><a class="headerlink" href="#convertir-hsl-a-rgb" title="Permanent link">¶</a></h3>
 <p>En el mismo sitio en que hemos basado la conversión de RGB a HSL de <a href="https://www.niwa.nu/2013/05/math-behind-colorspace-conversions-rgb-hsl/">Nikolai Waldman</a> está documentado como hacerlo a la inversa, pero nosotros no lo vamos a hacer de este modo.</p>
@@ -1010,38 +981,20 @@ H = 116, S = 67, L = 59
 <p>Hay una forma de hacerlo a partir de un programa libre como es Inkscape, publicado bajo licencia <strong>GNU General Public License, version 3</strong> y que hemos utilizado para las animaciones donde se han explicado los conceptos y donde además se pueden obtener otros datos y por supuesto modificarlos.</p>
 <p>Es muy sencillo de utilizar y nos ofrece además otras posibilidades interesantes. Veamos como llegar a ello una vez abierto Inkscape con un archivo en blanco.</p>
 <p>Dibujamos cualquier cosa y abrimos las opciones de Relleno y borde del objeto y desde ahí ya podemos cambiar el modelo de color, activar la rueda, mover la rueda o los valores lineales, volver a cambiar de modelo, etc y se nos irán mostrando los valores convetidos de uno a otro, como se observa en la animación siguiente cuando cambiamos del modelo HSL a RGB.</p>
-<center>
-
-![Modelos de color con Inkscape](../img/mod_colores/inkscape_HSL.gif)  
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/inkscape_HSL.gif" data-desc-position="bottom"><img alt="Modelos de color con Inkscape" src="../img/mod_colores/inkscape_HSL.gif"></a>  </p>
 <h2 id="modelo-hsv"><font color="#007575">Modelo HSV</font><a class="headerlink" href="#modelo-hsv" title="Permanent link">¶</a></h2>
 <p>El modelo HSV (<strong>Hue</strong>, <strong>Saturation</strong>, <strong>Value</strong> – <strong>Matiz</strong>, <strong>Saturación</strong>, <strong>Valor</strong>), es también llamado HSB (Hue, Saturation, Brightness – Matiz, Saturación, Brillo), define un modelo de color en términos de sus componentes.</p>
 <p>El <strong>Matiz</strong> o <strong>Hue</strong> se representa como un ángulo de 0 a 360º correspondiendo cada valor a un color. En una rueda de colores se puede representar de la siguiente forma:</p>
-<center>
-
-![Rueda de colores HSV](../img/mod_colores/rueda_HSV.png)  
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/rueda_HSV.png" data-desc-position="bottom"><img alt="Rueda de colores HSV" src="../img/mod_colores/rueda_HSV.png"></a>  </p>
 <p>Si asociamos con RGB vemos que el rojo corresponde a un ángulo de 0º, el verde a 120º y el azul a 240º. Los colores entre estos tres ángulos divisorios corresponden a niveles de mezcla de los dos colores extremos. Por ejemplo, justo en la mitad entre el rojo y el verde estaría la mezcla de ambos colores que corresponde al amarillo.</p>
 <p>La <strong>Saturación</strong> puede variar entre 0 y 100% y representa el porcentaje de brillo. En la animación siguiente vemos el funcionamiento de la rueda de color y del parámetro de saturación en el programa Inkscape.</p>
-<center>
-
-![Rueda de colores HSV y Saturación](../img/mod_colores/rueda_HSV_sat.gif)  
-*Rueda de colores HSV y Saturación*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/rueda_HSV_sat.gif" data-desc-position="bottom"><img alt="Rueda de colores HSV y Saturación" src="../img/mod_colores/rueda_HSV_sat.gif"></a></p>
+<p class="textoC"><b><i>Rueda de colores HSV y Saturación</i></b></p><b><i>
+</i></b><i></i><p><i><b></b></i></p>
 <p>El <strong>Valor</strong> también puede variar entre 0 y 100%, correspondiendo el 0 siempre a negro y el resto de valores un color mas o menos saturado. En la animación siguiente vemos el funcionamiento del parámetro Valor en el programa Inkscape.</p>
-<center>
-
-![Rueda de colores HSV y Valor](../img/mod_colores/rueda_HSV_val.gif)  
-*Rueda de colores HSV y Valor*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/mod_colores/rueda_HSV_val.gif" data-desc-position="bottom"><img alt="Rueda de colores HSV y Valor" src="../img/mod_colores/rueda_HSV_val.gif"></a>  </p>
+<p class="textoC"><b><i>Rueda de colores HSV y Valor</i></b></p><b><i>
+</i></b><i></i><p><i><b></b></i></p>
 <p>El propio Inkscape no puede servir para convertir RGB a HSV y viceversa. En la web también podemos encontrar calculadoras que lo hacen indicando incluso las fórmulas de conversión y dandonos una previsualización del color. A continuación, a título de ejemplo, ponemos enlaces a dos de ellas:</p>
 <ul>
 <li>Conversor de <a href="https://www.rapidtables.com/convert/color/hsv-to-rgb.html">RapidTables</a> en inglés.</li>

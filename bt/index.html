@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -876,13 +878,7 @@
 <li>un controlador digital, compuesto por una CPU, un procesador de señales digitales (DSP – Digital Signal Processor) llamado Link Controller (o controlador de Enlace) y de las interfaces con el dispositivo anfitrión.</li>
 </ul>
 <p>Su logotipo lo vemos en la figura siguiente:</p>
-<center>
-
-![Logotipo Bluetooth con texto y sin texto](../img/bt/BT_1.png).  
-*Logotipo Bluetooth con texto y sin texto*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_1.png" data-desc-position="bottom"><img alt="Logotipo Bluetooth con texto y sin texto" src="../img/bt/BT_1.png"></a>.  </p>
 <h2 id="bluetooth-v2"><font color="#007575"><strong>Bluetooth V2</strong></font><a class="headerlink" href="#bluetooth-v2" title="Permanent link">¶</a></h2>
 <p>Existe un procedimiento definido que se llama Pairing (o emparejamiento) que vincula a dos dispositivos Bluetooth. Cuando vinculamos dos dispositivos Bluetooth, se inicia un proceso en el que ellos se identifican por nombre y dirección interna y se solicitan la clave PIN para autorizar la conexión.</p>
 <p>Si el emparejamiento se realiza con éxito, ambos nodos suelen guardar la identificación del otro y cuando se encuentran cerca se vuelven a vincular sin necesidad de intervención manual.</p>
@@ -901,13 +897,7 @@
 </ul>
 <p>La velocidad por defecto es la de 9600 bps.</p>
 <p>Los módulos mas conocidos son el HC-05 y HC-06 que son Bluetooth V2 y cuyo aspecto podemos ver en la figura siguiente:</p>
-<center>
-
-![Módulos HC-05 y HC-06](../img/bt/BT_2.png).  
-*Módulos HC-05 y HC-06*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_2.png" data-desc-position="bottom"><img alt="Módulos HC-05 y HC-06" src="../img/bt/BT_2.png"></a>.  </p>
 <h2 id="bt-40-low-energy-ble-o-smart"><font color="#007575"><strong>BT 4.0, Low Energy (BLE) o Smart</strong></font><a class="headerlink" href="#bt-40-low-energy-ble-o-smart" title="Permanent link">¶</a></h2>
 <p>En realidad BLE se introduce como parte de la especificación Bluetooth 4.0. En la web podemos encontrar mucha información sobre el tema habitualmente poco accesible y poco estructurada.</p>
 <p><font color="#3000FF">Desde aquí voy a recomendar el artículo <strong><em>“Introduction to Bluetooth Low Energy: A basic overview of key concepts for BLE”</em></strong> publicado por <a href="https://www.adafruit.com/">Adafruit</a> donde se hace un repaso de los conceptos en los que se basa BLE y su traducción libre <strong><em>"Bluetooth BLE: el conocido desconocido"</em></strong> publicada por <a href="https://ahorasomos.izertis.com/solidgear/author/izertis-s-a/">Izertis</a>:</font></p><font color="#3000FF">
@@ -915,23 +905,11 @@
 <li>Enlace al original: “<a href="https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction">Introduction to Bluetooth Low Energy: A basic overview of key concepts for BLE</a>”</li>
 </font><li><font color="#3000FF">Enlace a la traducción libre: "<a href="https://ahorasomos.izertis.com/solidgear/bluetooth-ble-el-conocido-desconocido/">Bluetooth BLE: el conocido desconocido</a>"</font></li>
 </ul>
-<center>
-
-![Logotipo BLE](../img/bt/microcontrollers_LogoBluetoothSmart.jpg).  
-*Logotipo BLE*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/microcontrollers_LogoBluetoothSmart.jpg" data-desc-position="bottom"><img alt="Logotipo BLE" src="../img/bt/microcontrollers_LogoBluetoothSmart.jpg"></a>.  </p>
 <p>Básicamente se trata de un nuevo protocolo diseñado para reducir en todo lo posible el gran consumo de energía de sus predecesores. Generalmente se le conoce como BLE (iniciales de Bluetooth Low Energy) o Bluetooth LE o también como Bluetooth Smart y tienen un consumo típico que podemos cifrar entre los 10 y 15 mA. Otra de sus principales novedades radica en que este módulo si es utilizables con dispositivos iOS.</p>
 <p>El BLE es un subconjunto del estándar Bluetooth v4.0 que dispone de una pila de protocolos en referencia a la capa OSI (en inglés, Open Systems Interconnection) completamente nueva y orientada a conexiones sencillas en aplicaciones de muy baja potencia que suelen funcionar con pilas o baterías.</p>
 <p>La pila de protocolos para Bluetooth Low Energy sigue la estructura definida en la figura siguiente.</p>
-<center>
-
-![Pila de protocolos para BLE](../img/bt/BT_3.png).  
-*Pila de protocolos para BLE*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_3.png" data-desc-position="bottom"><img alt="Pila de protocolos para BLE" src="../img/bt/BT_3.png"></a>.  </p>
 <p>El controlador aloja las capas inferiores de la pila del protocolo y también la radio. El Hots contiene las capas superiores de la pila de protocolos. Por encima de ambas estaría la aplicación de usuario que es la que interactúa con la pila de protocolos. La ventaja es que todas estas capas se pueden implementar en un solo chip o dividir en varios y conectarlos a través de una capa de comunicaciones como UART, USB o SPI.</p>
 <ul>
 <li>
@@ -970,131 +948,42 @@
 <hr align="center" noshade="" size="5" color="blue">
 <p><font size="7"><b><font color="#FF0000">Opciones de APP</font></b></font></p>
 <p>Localizamos el icono de la aplicación y lo mantenemos pulsado hasta que aparezcan las opciones de "información" y "borrado" de la APP.</p>
-<center>
-
-![Acceso a información de la APP](../img/bt/acc_info.png).  
-*Acceso a información de la APP*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/acc_info.png" data-desc-position="bottom"><img alt="Acceso a información de la APP" src="../img/bt/acc_info.png"></a>.  </p>
 <p>Pulsamos sobre la "i" y nos aparece la pantalla de "Información de la aplicación":</p>
-<center>
-
-![Información de la información de la APP](../img/bt/info_app.png).  
-*Información de la información de la APP*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/info_app.png" data-desc-position="bottom"><img alt="Información de la información de la APP" src="../img/bt/info_app.png"></a>.  </p>
 <p>Desde la pantalla anterior podemos acceder a "Otros permisos" que tiene dicha aplicación. Estos pueden tener el aspecto que vemos en la imagen siguiente:</p>
-<center>
-
-![Permisos de la APP](../img/bt/permisos_app.png).  
-*Permisos de la APP*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/permisos_app.png" data-desc-position="bottom"><img alt="Permisos de la APP" src="../img/bt/permisos_app.png"></a>.  </p>
 <p>En estas condiciones no podemos establecer una conexión entre el dispositivo vinculado y el móvil. Debemos establecer los permisos de la siguiente forma:</p>
-<center>
-
-![Permisos de la APP](../img/bt/permisos_appOK.png).  
-*Permisos de la APP*
-
-</center>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/permisos_appOK.png" data-desc-position="bottom"><img alt="Permisos de la APP" src="../img/bt/permisos_appOK.png"></a>.  </p>
 <hr align="center" noshade="" size="5" color="blue">
 
 <p>Existen muchas aplicaciones capaces de actuar como apps que permiten transmitir datos entre dispositivos Bluetooth. Vamos a ver brevemente de Google Play Store las siguientes:</p>
 <h3 id="bluetooth-terminal-qwerty"><font color="#AA0000">Bluetooth Terminal Qwerty</font><a class="headerlink" href="#bluetooth-terminal-qwerty" title="Permanent link">¶</a></h3>
 <p><a href="https://apkcombo.com/bluetooth-terminal/Qwerty.BluetoothTerminal/">Bluetooth Terminal Qwerty</a>, una apk con una interface muy simple y fácil de configurar, basta conectarse con el dispositivo emparejado y comenzar a enviar comandos.</p>
-<center>
-
-![Bluetooth Terminal Qwerty](../img/bt/BT_5.png).  
-*Bluetooth Terminal Qwerty*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_5.png" data-desc-position="bottom"><img alt="Bluetooth Terminal Qwerty" src="../img/bt/BT_5.png"></a>.  </p>
 <h3 id="arduino-bluetooth-controller"><font color="#AA0000">Arduino Bluetooth Controller </font><a class="headerlink" href="#arduino-bluetooth-controller" title="Permanent link">¶</a></h3>
 <p>Arduino Bluetooth Controller es una aplicación que le permite controlar su placa arduino (y placas similares) a través de Bluetooth.</p>
-<center>
-
-![Logo Arduino Bluetooth Controller](../img/bt/BT_6.png).  
-*Logo Arduino Bluetooth Controller*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_6.png" data-desc-position="bottom"><img alt="Logo Arduino Bluetooth Controller" src="../img/bt/BT_6.png"></a>.  </p>
 <p>Al lanzar la aplicación se muestra una imagen y tras unos instantes aparece el menú gráfico de la aplicación. En la parte superior derecha tenemos el icono para conectar a un dispositivo.</p>
-<center>
-
-![Arduino Bluetooth Controller](../img/bt/BT_7.png).  
-*Arduino Bluetooth Controller*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_7.png" data-desc-position="bottom"><img alt="Arduino Bluetooth Controller" src="../img/bt/BT_7.png"></a>.  </p>
 <p>En la imagen siguiente vemos el modo terminal de la aplicación.</p>
-<center>
-
-![Modo terminal de Arduino Bluetooth Controller](../img/bt/BT_8.jpeg).  
-*Modo terminal de Arduino Bluetooth Controller*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_8.jpeg" data-desc-position="bottom"><img alt="Modo terminal de Arduino Bluetooth Controller" src="../img/bt/BT_8.jpeg"></a>.  </p>
 <h3 id="arduino-bluetooth-control"><font color="#AA0000">Arduino Bluetooth Control</font><a class="headerlink" href="#arduino-bluetooth-control" title="Permanent link">¶</a></h3>
 <p>Arduino Bluetooth Control también es una aplicación que te permite controlar la placa arduino (y placas similares) a través de Bluetooth.</p>
-<center>
-
-![Logo Arduino Bluetooth Control](../img/bt/BT_9.png).  
-*Logo Arduino Bluetooth Control*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_9.png" data-desc-position="bottom"><img alt="Logo Arduino Bluetooth Control" src="../img/bt/BT_9.png"></a>.  </p>
 <p>Se lanza la app, se escoge dispositivo y selecciona el modo terminal para estar en una situación parecida a la de las otras aplicaciones.</p>
-<center>
-
-![Arduino Bluetooth Control](../img/bt/BT_10.png).  
-*Arduino Bluetooth Control*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/BT_10.png" data-desc-position="bottom"><img alt="Arduino Bluetooth Control" src="../img/bt/BT_10.png"></a>.  </p>
 <h3 id="serial-bluetooth-terminal"><font color="#AA0000">Serial Bluetooth Terminal</font><a class="headerlink" href="#serial-bluetooth-terminal" title="Permanent link">¶</a></h3>
 <p>Aplicación para Android compatible con Bluetooth clásico y Bluetooth LE o Bluetooth Low Energy o BLE o Bluetooth Smart.</p>
-<center>
-
-![Logo Serial Bluetooth Terminal](../img/bt/S_BT_Terminal.png).  
-*Logo Serial Bluetooth Terminal*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/S_BT_Terminal.png" data-desc-position="bottom"><img alt="Logo Serial Bluetooth Terminal" src="../img/bt/S_BT_Terminal.png"></a>.  </p>
 <p>Seguimos el proceso habitual de emparejar la ESP32 micro:STEAMakers con nuestro móvil:</p>
-<center>
-
-![Proceso para emparejar dispositivos](../img/bt/emparejar.gif).  
-*Proceso para emparejar dispositivos*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/emparejar.gif" data-desc-position="bottom"><img alt="Proceso para emparejar dispositivos" src="../img/bt/emparejar.gif"></a>.  </p>
 <p>Abrimos la APP, que por defecto nos muestra la pantalla siguiente:</p>
-<center>
-
-![Pantalla inicial Serial Bluetooth Terminal](../img/bt/p_inicial.png).  
-*Pantalla inicial Serial Bluetooth Terminal*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/p_inicial.png" data-desc-position="bottom"><img alt="Pantalla inicial Serial Bluetooth Terminal" src="../img/bt/p_inicial.png"></a>.  </p>
 <p>Si abrimos el menú de la parte izquierda vemos una pantalla con opciones. Entramos en "Devices" para que se muestren los dispositivos disponibles y así conectarnos con el dispositivo que hemos emparejado antes:</p>
-<center>
-
-![Conexión con dispositivo](../img/bt/device.png).  
-*Conexión con dispositivo*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/device.png" data-desc-position="bottom"><img alt="Conexión con dispositivo" src="../img/bt/device.png"></a>.  </p>
 <p>En la pantalla de la derecha vemos que podemos volver al terminal mostrado en la primera página y escoger el tipo de Bluetooth con el que vamos a trabajar, BLE en nuestro caso. Pulsamos sobre el dispositivo marcado y se establece la conexión, indicándose esto mediante mensajes y por la posición del conector, y se retorna a la pantalla del terminal que vemos a continuación:</p>
-<center>
-
-![Conexión con dispositivo establecida](../img/bt/conex.png).  
-*Conexión con dispositivo establecida*
-
-</center>
-
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../img/bt/conex.png" data-desc-position="bottom"><img alt="Conexión con dispositivo establecida" src="../img/bt/conex.png"></a>.  </p>
 <p>Con esto el sistema está listo para enviar datos de la placa al móvil y viceversa.</p>
 
 
