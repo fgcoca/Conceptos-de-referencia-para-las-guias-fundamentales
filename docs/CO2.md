@@ -89,7 +89,7 @@ Es importante tener en cuenta que el billón de estas ppb es un billón anglosaj
 
 Otras dos formas habituales de expresar la concentración de los contaminantes atmosféricos son los µg/m³ (microgramos por metro cúbico) y los mg/m³ (miligramos por metro cúbico). La equivalencia es similar a las de ppm y ppb:
 
-<center>1 mg/m³ = 1000 µg/m³</center>
+<p class="textoC">1 mg/m³ = 1000 µg/m³</p>
 
 Para convertir las ppb en µg/m³ tenemos que tener en cuenta que dicha conversión depende del tipo de contaminante, y de una presión y una temperatura que tomemos como referencia. Para ver esto, tomemos una concentración de 1 ppb de un contaminante M. Esto implica que tenemos 1 m³ de M en $10^9$ m³ de aire. O lo que es lo mismo, $10^{−9}$ m³ de M en 1 m³ de aire.
 
@@ -97,34 +97,32 @@ La forma habitual de expresar la concentración de CO2 es en mg/m³ (miligramos 
 
 Teniendo en cuenta la ecuación general de los gases ideales, para el CO2 (con peso molecular 44,01 g/mol), y tomando como referencia P = 1 atm y T = 298,16 K (25 ºC), tenemos (R = 0,08205746 atm·L/mol·K):
 
-<center>
+<p class="textoC">
 
-$\dfrac{10^{6}\cdot 44,01\hspace{0.1cm} g/mol\cdot 1\hspace{0.1cm}atm\cdot 10^{-6}}{0,08205746\cdot 298,16\hspace{0.1cm}K}=1,798\hspace{0.1cm}mg\hspace{0.1cm}\approx\hspace{0.1cm}1,8\hspace{0.1cm}mg$
+$$\dfrac{10^{6}\cdot 44,01\hspace{0.1cm} g/mol\cdot 1\hspace{0.1cm}atm\cdot 10^{-6}}{0,08205746\cdot 298,16\hspace{0.1cm}K}=1,798\hspace{0.1cm}mg\hspace{0.1cm}\approx\hspace{0.1cm}1,8\hspace{0.1cm}mg$$
 
-</center>
+</p>
 
 Luego:
 
-<center>
+<p class="textoC">
 
-$\boxed{1\hspace{0.1cm}ppm=1,8\hspace{0.1cm}mg/m^{3}\hspace{1cm}(CO_{2}\hspace{0.2cm}@\hspace{0.2cm}1\hspace{0.2cm}atm.\hspace{0.2cm} 25\hspace{0.2cm}ºC)}$
+$$\boxed{1\hspace{0.1cm}ppm=1,8\hspace{0.1cm}mg/m^{3}\hspace{1cm}(CO_{2}\hspace{0.2cm}@\hspace{0.2cm}1\hspace{0.2cm}atm.\hspace{0.2cm} 25\hspace{0.2cm}ºC)}$$
 
-</center>
+</p>
 
 Que será la relación a usar para convertir entre unidades de CO2.
 
 También se puede expresar como:
 
-<center>
+<p class="textoC">
 
-$\boxed{1\hspace{0.1cm}ppb=1800\hspace{0.1cm}\mu g/m^{3}\hspace{1cm}(CO_{2}\hspace{0.2cm}@\hspace{0.2cm}1\hspace{0.2cm}atm.\hspace{0.2cm} 25\hspace{0.2cm}ºC)}$
+$$\boxed{1\hspace{0.1cm}ppb=1800\hspace{0.1cm}\mu g/m^{3}\hspace{1cm}(CO_{2}\hspace{0.2cm}@\hspace{0.2cm}1\hspace{0.2cm}atm.\hspace{0.2cm} 25\hspace{0.2cm}ºC)}$$
 
-</center>
+</p>
 
 ### <FONT COLOR=#AA0000>Valores de referencia para el CO2</font>
 En la tabla siguientes damos los valores que vamos a considerar en nuestro caso. En la columna color se establece cual será el color que se ilumine en un posible semáforo.
-
-<center>
 
 | CO2 (ppm) | CO2 ($mg / m ^{3}$) | Ambiente | Mensaje | Color |
 |:-:|:-:|---|---|---|
@@ -134,7 +132,6 @@ En la tabla siguientes damos los valores que vamos a considerar en nuestro caso.
 | de 1501 a 2000 | de 2701 a 3600 | Muy malo | VENTILAR | Rojo fijo |
 | mas de 2000 | mas de 3600 | Inaceptable | Desalojar | Rojo intermitente |
 
-</center>
 
 ### <FONT COLOR=#AA0000>Fuentes emisoras de CO2 en personas</font>
 En el ambiente que nos ocupa la principal fuente de emisión de CO2 va a ser el ser humano a través de la respiración, la sudoración, la transpiración y el sudor.
@@ -167,8 +164,6 @@ A largo plazo pueden dañar el hígado, los riñones o el sistema nervioso centr
 ### <FONT COLOR=#AA0000>Valores de referencia para VOC</font>
 En la tabla siguiente damos los valores que vamos a considerar en nuestro caso.
 
-<center>
-
 | VOC (ppb) | Ambiente | Mensaje | Color |
 |---|---|---|---|
 | de 0 a 200 | Muy bueno | Aconsejado | Apagado |
@@ -176,8 +171,6 @@ En la tabla siguiente damos los valores que vamos a considerar en nuestro caso.
 | de 601 a 1000 | Moderado | ventilar | Amarillo |
 | de 1001 a 2000 | Muy malo | VENTILAR | Rojo fijo |
 | mas de 2000 |  Inaceptable | Desalojar | Rojo intermitente |
-
-</center>
 
 ### <FONT COLOR=#AA0000>Fuentes emisoras de VOC en personas</font>
 En el ser humano se producen diferentes gases VOC a través de la respiración (acetona, etanol, isopreno), la sudoración, la transpiración, el sudor, por flato (metano), los cosméticos (Limoneno, eucaliptol), el mobiliaario (alcoholes), la combustión de motores y calderas (hidrocarburos) y los ordenadores, impresoras o fotocopiadoras (benceno, estireno, fenol).

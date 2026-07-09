@@ -16,12 +16,7 @@ El hardware que compone el dispositivo Bluetooth está compuesto por dos partes:
 
 Su logotipo lo vemos en la figura siguiente:
 
-<center>
-  
 ![Logotipo Bluetooth con texto y sin texto](../img/bt/BT_1.png).  
-*Logotipo Bluetooth con texto y sin texto*
-
-</center>
 
 ## <FONT COLOR=#007575>**Bluetooth V2**</font>
 Existe un procedimiento definido que se llama Pairing (o emparejamiento) que vincula a dos dispositivos Bluetooth. Cuando vinculamos dos dispositivos Bluetooth, se inicia un proceso en el que ellos se identifican por nombre y dirección interna y se solicitan la clave PIN para autorizar la conexión.
@@ -47,12 +42,7 @@ La velocidad por defecto es la de 9600 bps.
 
 Los módulos mas conocidos son el HC-05 y HC-06 que son Bluetooth V2 y cuyo aspecto podemos ver en la figura siguiente:
 
-<center>
-  
 ![Módulos HC-05 y HC-06](../img/bt/BT_2.png).  
-*Módulos HC-05 y HC-06*
-
-</center>
 
 ## <FONT COLOR=#007575>**BT 4.0, Low Energy (BLE) o Smart**</font>
 En realidad BLE se introduce como parte de la especificación Bluetooth 4.0. En la web podemos encontrar mucha información sobre el tema habitualmente poco accesible y poco estructurada.
@@ -62,12 +52,7 @@ En realidad BLE se introduce como parte de la especificación Bluetooth 4.0. En 
 * Enlace al original: “[Introduction to Bluetooth Low Energy: A basic overview of key concepts for BLE](https://learn.adafruit.com/introduction-to-bluetooth-low-energy/introduction)”
 * Enlace a la traducción libre: "[Bluetooth BLE: el conocido desconocido](https://ahorasomos.izertis.com/solidgear/bluetooth-ble-el-conocido-desconocido/)"</font>
 
-<center>
-  
 ![Logotipo BLE](../img/bt/microcontrollers_LogoBluetoothSmart.jpg).  
-*Logotipo BLE*
-
-</center>
 
 Básicamente se trata de un nuevo protocolo diseñado para reducir en todo lo posible el gran consumo de energía de sus predecesores. Generalmente se le conoce como BLE (iniciales de Bluetooth Low Energy) o Bluetooth LE o también como Bluetooth Smart y tienen un consumo típico que podemos cifrar entre los 10 y 15 mA. Otra de sus principales novedades radica en que este módulo si es utilizables con dispositivos iOS.
 
@@ -75,12 +60,7 @@ El BLE es un subconjunto del estándar Bluetooth v4.0 que dispone de una pila de
 
 La pila de protocolos para Bluetooth Low Energy sigue la estructura definida en la figura siguiente.
 
-<center>
-  
 ![Pila de protocolos para BLE](../img/bt/BT_3.png).  
-*Pila de protocolos para BLE*
-
-</center>
 
 El controlador aloja las capas inferiores de la pila del protocolo y también la radio. El Hots contiene las capas superiores de la pila de protocolos. Por encima de ambas estaría la aplicación de usuario que es la que interactúa con la pila de protocolos. La ventaja es que todas estas capas se pueden implementar en un solo chip o dividir en varios y conectarlos a través de una capa de comunicaciones como UART, USB o SPI.
 
@@ -111,39 +91,20 @@ Existen muchas aplicaciones y en todas, antes de usar cualquier aplicación, deb
 
 Localizamos el icono de la aplicación y lo mantenemos pulsado hasta que aparezcan las opciones de "información" y "borrado" de la APP.
 
-<center>
-  
 ![Acceso a información de la APP](../img/bt/acc_info.png).  
-*Acceso a información de la APP*
-
-</center>
 
 Pulsamos sobre la "i" y nos aparece la pantalla de "Información de la aplicación":
 
-<center>
-  
 ![Información de la información de la APP](../img/bt/info_app.png).  
-*Información de la información de la APP*
-
-</center>
 
 Desde la pantalla anterior podemos acceder a "Otros permisos" que tiene dicha aplicación. Estos pueden tener el aspecto que vemos en la imagen siguiente:
 
-<center>
-  
 ![Permisos de la APP](../img/bt/permisos_app.png).  
-*Permisos de la APP*
-
-</center>
 
 En estas condiciones no podemos establecer una conexión entre el dispositivo vinculado y el móvil. Debemos establecer los permisos de la siguiente forma:
 
-<center>
-  
 ![Permisos de la APP](../img/bt/permisos_appOK.png).  
-*Permisos de la APP*
 
-</center>
 <hr align="center" noshade size="5" color="blue">
 
 Existen muchas aplicaciones capaces de actuar como apps que permiten transmitir datos entre dispositivos Bluetooth. Vamos a ver brevemente de Google Play Store las siguientes:
@@ -151,104 +112,49 @@ Existen muchas aplicaciones capaces de actuar como apps que permiten transmitir 
 ### <FONT COLOR=#AA0000>Bluetooth Terminal Qwerty</font>
 [Bluetooth Terminal Qwerty](https://apkcombo.com/bluetooth-terminal/Qwerty.BluetoothTerminal/), una apk con una interface muy simple y fácil de configurar, basta conectarse con el dispositivo emparejado y comenzar a enviar comandos.
 
-<center>
-  
 ![Bluetooth Terminal Qwerty](../img/bt/BT_5.png).  
-*Bluetooth Terminal Qwerty*
-
-</center>
 
 ### <FONT COLOR=#AA0000>Arduino Bluetooth Controller </font>
 Arduino Bluetooth Controller es una aplicación que le permite controlar su placa arduino (y placas similares) a través de Bluetooth.
-
-<center>
   
 ![Logo Arduino Bluetooth Controller](../img/bt/BT_6.png).  
-*Logo Arduino Bluetooth Controller*
-
-</center>
 
 Al lanzar la aplicación se muestra una imagen y tras unos instantes aparece el menú gráfico de la aplicación. En la parte superior derecha tenemos el icono para conectar a un dispositivo.
 
-<center>
-  
 ![Arduino Bluetooth Controller](../img/bt/BT_7.png).  
-*Arduino Bluetooth Controller*
-
-</center>
 
 En la imagen siguiente vemos el modo terminal de la aplicación.
 
-<center>
-  
 ![Modo terminal de Arduino Bluetooth Controller](../img/bt/BT_8.jpeg).  
-*Modo terminal de Arduino Bluetooth Controller*
-
-</center>
 
 ### <FONT COLOR=#AA0000>Arduino Bluetooth Control</font>
 Arduino Bluetooth Control también es una aplicación que te permite controlar la placa arduino (y placas similares) a través de Bluetooth.
 
-<center>
-  
 ![Logo Arduino Bluetooth Control](../img/bt/BT_9.png).  
-*Logo Arduino Bluetooth Control*
-
-</center>
 
 Se lanza la app, se escoge dispositivo y selecciona el modo terminal para estar en una situación parecida a la de las otras aplicaciones.
 
-<center>
-  
 ![Arduino Bluetooth Control](../img/bt/BT_10.png).  
-*Arduino Bluetooth Control*
-
-</center>
 
 ### <FONT COLOR=#AA0000>Serial Bluetooth Terminal</font>
 Aplicación para Android compatible con Bluetooth clásico y Bluetooth LE o Bluetooth Low Energy o BLE o Bluetooth Smart.
 
-<center>
-  
 ![Logo Serial Bluetooth Terminal](../img/bt/S_BT_Terminal.png).  
-*Logo Serial Bluetooth Terminal*
-
-</center>
 
 Seguimos el proceso habitual de emparejar la ESP32 micro:STEAMakers con nuestro móvil:
 
-<center>
-  
 ![Proceso para emparejar dispositivos](../img/bt/emparejar.gif).  
-*Proceso para emparejar dispositivos*
-
-</center>
 
 Abrimos la APP, que por defecto nos muestra la pantalla siguiente:
 
-<center>
-  
 ![Pantalla inicial Serial Bluetooth Terminal](../img/bt/p_inicial.png).  
-*Pantalla inicial Serial Bluetooth Terminal*
-
-</center>
 
 Si abrimos el menú de la parte izquierda vemos una pantalla con opciones. Entramos en "Devices" para que se muestren los dispositivos disponibles y así conectarnos con el dispositivo que hemos emparejado antes:
 
-<center>
-  
 ![Conexión con dispositivo](../img/bt/device.png).  
-*Conexión con dispositivo*
-
-</center>
 
 En la pantalla de la derecha vemos que podemos volver al terminal mostrado en la primera página y escoger el tipo de Bluetooth con el que vamos a trabajar, BLE en nuestro caso. Pulsamos sobre el dispositivo marcado y se establece la conexión, indicándose esto mediante mensajes y por la posición del conector, y se retorna a la pantalla del terminal que vemos a continuación:
 
-<center>
-  
 ![Conexión con dispositivo establecida](../img/bt/conex.png).  
-*Conexión con dispositivo establecida*
-
-</center>
 
 Con esto el sistema está listo para enviar datos de la placa al móvil y viceversa.

@@ -10,11 +10,11 @@ Uno de los parámetros que caracterizan a un sonido es su frecuencia de emisión
 
 En la imagen y la tabla siguientes vemos un dibujo con un fragmento de las teclas de un piano estando todo referido a una nota estándar, la nota "La" central que tiene una frecuencia de 440 Hz. Podemos ver la nota musical que reproduce, en las dos notaciones más comunes de los sonidos (Inglés: C D E F G A B, Alemán: C D E F G A H, Español, italiano y francés: Do Re Mi Fa Sol La Si) y además se encuentra la frecuencia que produce esa nota musical.
 
-<center>
+
 
 ![Sección de piano y notas](../img/previo/piano.png)  
 
-</center>
+
 
 Otro de los parámetros que caracterizan al sonido es su nivel y en sonido se caracteriza con los decibelios (dB) que es la forma de medir la intensidad del sonido. La percepción del sonido depende de factores como la intensidad, el tiempo que dura, las frecuencias o tonos y el entorno donde estamos. Vamos a introducir brevemente como medir la intensidad del sonido.
 
@@ -28,7 +28,7 @@ La escala de medida en dB no es lineal, es logaritmica porque representa mejor l
 
 En la tabla vemos algunos ejemplos del día a día:
 
-<center>
+
 
 |nivel de sonido|Percepción|Situación|
 |---|---|---|
@@ -40,11 +40,11 @@ En la tabla vemos algunos ejemplos del día a día:
 |100 a 120 dB|Muy alto|Taladro/claxon/concierto R&R = 120 dB. Interior discoteca = 110 dB|
 |mas de 120 dB|Dolor|Avión despegando a 25 metros. Petardo a un metro|
 
-</center>
+
 
 Una equivalencia que nos puede ayudar a familiarizarnos con esta unidad es la tabla de equivalencias entre potencias y dBm (decibelios milivatio):
 
-<center>
+
 <font size="1">
 
 | <font size="1">P (mW) | <font size="1">dBm | <font size="1">P (mW) | <font size="1">dBm | <font size="1">P (mW) | <font size="1">dBm | <font size="1">P (mW) | <font size="1">dBm |
@@ -63,7 +63,7 @@ Una equivalencia que nos puede ayudar a familiarizarnos con esta unidad es la ta
 | <font size="1">13 | <font size="1">11 | <font size="1">200 | <font size="1">23 | <font size="1">3 W | <font size="1">35 | <font size="1">50 W | <font size="1">47 |
 
 </font size>
-</center>
+
 
 Si observamos cuidadosamente la tabla veremos que la potencia se duplica o divide por dos, según recorramos la tabla, cada 3 dB.
 
@@ -74,21 +74,21 @@ Normalmente (como componente) estos dispositivos se incluyen en un módulo que i
 
 Un buzzer se basa en un transductor piezoeléctrico que es capaz de variar su volumen con el paso de la corriente eléctrica, fenómeno que se aprovecha para hacer vibrar la membrana del altavoz. Esquemáticamente vemos esto en la figura siguiente:
 
-<center>
+
 
 ![Funcionamiento y aspecto de un buzzer pasivo](../img/previo/buzzer_pas.png)  
 
-</center>
+
 
 Un zumbador pasivo requiere para su funcionamiento una señal de tipo PWM para poder indicarle la frecuencia y la duración de la señal.
 
 El aspecto de un buzzer clásico visto por ambos lados nos ayudará a distinguirlo del activo.
 
-<center>
+
 
 ![Aspecto de un buzzer pasivo típico](../img/previo/buzzer_pas_dist.png)  
 
-</center>
+
 
 ### <FONT COLOR=#AA0000>**Zumbador activo**</font>
 Este tipo de zumbador incluye un oscilador que genera una frecuencia audible fija y que se conoce como zumbador pasivo y,  en realidad, es el que de forma correcta **se puede denominar como zumbador**. Este es mucho mas sencillo de usar ya que basta con conectarlo a un pin digital y cuando pongamos a nivel alto este pin el zumbador generará su zumbido característico durante el tiempo que establezcamos. Con este tipo de zumbador no se pueden generar melodías.
@@ -99,11 +99,11 @@ Un zumbador activo produce un tono audible fijo con tan solo aplicarle tensión.
 
 El aspecto por ambos lados de uno típico nos ayudará a distinguirlo del pasivo.
 
-<center>
+
 
 ![Aspecto de un buzzer activo típico](../img/previo/buzzer_act_dist.png)  
 
-</center>
+
 
 ## <FONT COLOR=#007575>**Las comunicaciones I2C**</font>
 

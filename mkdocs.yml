@@ -69,6 +69,9 @@ nav:
 #  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
 #  - auto
 
+extra_css:
+  - stylesheets/extra.css
+
 # 6. Configuración del tema
 theme:
   name: material

@@ -30,11 +30,7 @@ Veamos una descripción de los bloques que componen esta libreria:
 
 * **inicia UDP en el puerto...**
 
-<center>
-
 ![Bloque inicia UDP en el puerto...](../img/udp/B_ini_UDP.png)  
-
-</center>
 
 Este bloque configura el script para que **escuche los mensajes UDP en el puerto designado**. La dirección IP propia del dispositivo y el número de puerto especificado forman un socket e identifican de forma única el dispositivo y cualquier servicio de software que proporcione. Según lo anterior:
 
@@ -45,11 +41,7 @@ nuestro script lo verá y lo recibirá.
 
 * **envia paquete UDP...a la IP...y puerto...**
 
-<center>
-
 ![Bloque envia paquete UDP...a la IP...y puerto...](../img/udp/B_envia_paq_UDP.png)  
-
-</center>
 
 Este bloque se utiliza para **enviar mensajes UDP a la dirección IP y puerto designados**. La **dirección IP 255.255.255.255** es una dirección de **difusión especial**, y se utilizará para acceder a todos los dispositivos IP en la subred local. Esto facilita el envío de mensajes sin molestarse con la dirección IP específica de cada dispositivo.
 
@@ -66,11 +58,7 @@ Los mensajes también pueden ser enviados utilizando la dirección IP específic
 
 * **recibe paquete UDP**
 
-<center>
-
 ![Bloque recibe paquete UDP](../img/udp/B_recib_paq_UDP.png)  
-
-</center>
 
 **Siempre que se reciba un mensaje UDP, este bloque contendrá su contenido**. Comprobando si su longitud es mayor que cero, podemos consultar el resultado de las transacciones UDP.
 
@@ -80,24 +68,12 @@ Hay otros bloques en la biblioteca que no se utilizan en este proyecto aunque se
 
 * **detén UDP**. Detiene el procesado de UDP
 
-<center>
-
 ![Bloque detén UDP](../img/udp/B_deten_UDP.png)  
-
-</center>
 
 * **dirección IP remota de UDP**. El mensaje UDP envía la dirección IP remota.
 
-<center>
-
 ![Bloque dirección IP remota de UDP](../img/udp/B_dir_rem_UDP.png)  
-
-</center>
 
 * **puerto remoto de UDP**. El mensaje UDP envía el puerto remoto.
 
-<center>
-
 ![Bloque puerto remoto de UDP](../img/udp/B_puerto_rem_UDP.png)  
-
-</center>
